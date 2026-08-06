@@ -14,7 +14,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="wordmark">Astra<span>Via</span></a>
+    <a href="index.html" class="wordmark"><img src="astravia-mark.png" alt="AstraVia">Astra<span>Via</span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html" class="is-active">Home</a>
       <a href="case-studies.html">Case Studies</a>
@@ -35,8 +35,35 @@
 
 <main>
 
-  <!-- ============ HERO ============ -->
+  <!-- ============ HERO (full-bleed graphic) ============ -->
   <section class="hero">
+    <div class="hero-bleed-graphic" aria-hidden="true">
+      <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg">
+        <g class="hg-line" style="animation-delay:.05s" ><path d="M70 250 L170 120"/></g>
+        <g class="hg-line" style="animation-delay:.15s"><path d="M170 120 L280 70"/></g>
+        <g class="hg-line" style="animation-delay:.25s"><path d="M280 70 L390 130"/></g>
+        <g class="hg-line" style="animation-delay:.2s"><path d="M170 120 L110 60"/></g>
+        <g class="hg-line" style="animation-delay:.3s"><path d="M280 70 L260 190"/></g>
+        <g class="hg-line" style="animation-delay:.35s"><path d="M70 250 L200 260"/></g>
+        <g class="hg-line" style="animation-delay:.4s"><path d="M200 260 L260 190"/></g>
+        <g class="hg-line" style="animation-delay:.45s"><path d="M260 190 L390 130"/></g>
+        <g class="hg-line" style="animation-delay:.5s"><path d="M200 260 L340 280"/></g>
+        <g class="hg-line" style="animation-delay:.55s"><path d="M340 280 L390 130"/></g>
+
+        <circle class="hg-node" cx="70" cy="250" r="5" style="animation-delay:0s"/>
+        <circle class="hg-node" cx="110" cy="60" r="4" style="animation-delay:.08s"/>
+        <circle class="hg-node is-primary" cx="170" cy="120" r="7" style="animation-delay:.16s"/>
+        <circle class="hg-node" cx="280" cy="70" r="5" style="animation-delay:.24s"/>
+        <circle class="hg-node is-primary" cx="260" cy="190" r="7" style="animation-delay:.32s"/>
+        <circle class="hg-node" cx="200" cy="260" r="5" style="animation-delay:.4s"/>
+        <circle class="hg-node" cx="340" cy="280" r="4" style="animation-delay:.48s"/>
+        <circle class="hg-node is-primary" cx="390" cy="130" r="7" style="animation-delay:.56s"/>
+
+        <circle class="hg-pulse" cx="170" cy="120" r="7"/>
+        <circle class="hg-pulse" cx="260" cy="190" r="7" style="animation-delay:2s"/>
+        <circle class="hg-pulse" cx="390" cy="130" r="7" style="animation-delay:2.6s"/>
+      </svg>
+    </div>
     <div class="container">
       <div class="hero-copy reveal">
         <p class="eyebrow">AstraVia</p>
@@ -48,41 +75,15 @@
           <a href="case-studies.html" class="btn btn-ghost">See examples</a>
         </div>
       </div>
-      <div class="hero-graphic reveal" aria-hidden="true">
-        <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg">
-          <g class="hg-line" style="animation-delay:.05s" ><path d="M70 250 L170 120"/></g>
-          <g class="hg-line" style="animation-delay:.15s"><path d="M170 120 L280 70"/></g>
-          <g class="hg-line" style="animation-delay:.25s"><path d="M280 70 L390 130"/></g>
-          <g class="hg-line" style="animation-delay:.2s"><path d="M170 120 L110 60"/></g>
-          <g class="hg-line" style="animation-delay:.3s"><path d="M280 70 L260 190"/></g>
-          <g class="hg-line" style="animation-delay:.35s"><path d="M70 250 L200 260"/></g>
-          <g class="hg-line" style="animation-delay:.4s"><path d="M200 260 L260 190"/></g>
-          <g class="hg-line" style="animation-delay:.45s"><path d="M260 190 L390 130"/></g>
-          <g class="hg-line" style="animation-delay:.5s"><path d="M200 260 L340 280"/></g>
-          <g class="hg-line" style="animation-delay:.55s"><path d="M340 280 L390 130"/></g>
-
-          <circle class="hg-node" cx="70" cy="250" r="5" style="animation-delay:0s"/>
-          <circle class="hg-node" cx="110" cy="60" r="4" style="animation-delay:.08s"/>
-          <circle class="hg-node is-primary" cx="170" cy="120" r="7" style="animation-delay:.16s"/>
-          <circle class="hg-node" cx="280" cy="70" r="5" style="animation-delay:.24s"/>
-          <circle class="hg-node is-primary" cx="260" cy="190" r="7" style="animation-delay:.32s"/>
-          <circle class="hg-node" cx="200" cy="260" r="5" style="animation-delay:.4s"/>
-          <circle class="hg-node" cx="340" cy="280" r="4" style="animation-delay:.48s"/>
-          <circle class="hg-node is-primary" cx="390" cy="130" r="7" style="animation-delay:.56s"/>
-
-          <circle class="hg-pulse" cx="170" cy="120" r="7"/>
-          <circle class="hg-pulse" cx="260" cy="190" r="7" style="animation-delay:2s"/>
-          <circle class="hg-pulse" cx="390" cy="130" r="7" style="animation-delay:2.6s"/>
-        </svg>
-      </div>
     </div>
   </section>
 
   <!-- ============ 4-UP HIGHLIGHT STRIP ============ -->
   <section class="section section--light">
-    <div class="container">
-      <p class="eyebrow">Built around real-world delivery</p>
-      <h2 class="section-heading">AstraVia combines hands-on technical delivery with the experience of building products, systems and operations from the ground up.</h2>
+    <div class="container reveal">
+      <p class="eyebrow">Why AstraVia</p>
+      <h2 class="section-heading">Built for real-world delivery</h2>
+      <p class="section-intro">AstraVia combines hands-on technical delivery with the experience of building products, systems and operations from the ground up.</p>
 
       <div class="scroll-row reveal-stagger" style="margin-top:var(--space-5);">
         <div class="card">
@@ -110,39 +111,31 @@
     </div>
   </section>
 
-  <!-- ============ WHAT WE DO ============ -->
+  <!-- ============ WHAT WE DO (icon list — layout variety #1) ============ -->
   <section class="section section--mist">
-    <div class="container">
-      <div class="section-head-row reveal">
-        <div>
-          <p class="eyebrow">What we do</p>
-          <h2 class="section-heading">Discovery, strategy and delivery — designing the right system and building solutions that fit the way you actually work.</h2>
-        </div>
-      </div>
+    <div class="container reveal">
+      <p class="eyebrow">What we do</p>
+      <h2 class="section-heading">Discovery, strategy and delivery</h2>
+      <p class="section-intro">Designing the right system and building solutions that fit the way you actually work.</p>
 
-      <div class="scroll-row reveal-stagger" style="margin-top:var(--space-5);">
-        <div class="card">
+      <div class="icon-list reveal-stagger">
+        <div class="icon-row-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg></div>
-          <h3>App &amp; product development</h3>
-          <p>We design and build practical digital products, from mobile apps and web platforms to early prototypes — shaping ideas into reliable, usable tools that solve a real problem.</p>
+          <div><h3>App &amp; product development</h3><p>We design and build practical digital products, from mobile apps and web platforms to early prototypes — shaping ideas into reliable, usable tools that solve a real problem.</p></div>
         </div>
-        <div class="card">
+        <div class="icon-row-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></div>
-          <h3>Custom software &amp; internal tools</h3>
-          <p>Dashboards, admin portals, booking systems, reporting tools, data capture systems and lightweight platforms designed around the way your organisation works.</p>
+          <div><h3>Custom software &amp; internal tools</h3><p>Dashboards, admin portals, booking systems, reporting tools, data capture systems and lightweight platforms designed around the way your organisation works.</p></div>
         </div>
-        <div class="card">
+        <div class="icon-row-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
-          <h3>Operational improvement &amp; automation</h3>
-          <p>We review how work actually happens, find the friction, then improve it with better systems, automations and clearer data.</p>
+          <div><h3>Operational improvement &amp; automation</h3><p>We review how work actually happens, find the friction, then improve it with better systems, automations and clearer data.</p></div>
         </div>
-        <div class="card">
+        <div class="icon-row-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="20" x2="5" y2="12"/><line x1="12" y1="20" x2="12" y2="6"/><line x1="19" y1="20" x2="19" y2="14"/></svg></div>
-          <h3>Data, insight &amp; decision tools</h3>
-          <p>Dashboards, reports and data tools that turn scattered information into something easier to understand, monitor and act on.</p>
+          <div><h3>Data, insight &amp; decision tools</h3><p>Dashboards, reports and data tools that turn scattered information into something easier to understand, monitor and act on.</p></div>
         </div>
       </div>
-      <p class="scroll-hint">← swipe for more →</p>
     </div>
   </section>
 
@@ -150,7 +143,8 @@
   <section class="section section--light">
     <div class="container reveal">
       <p class="eyebrow">What we build</p>
-      <h2 class="section-heading">Every project is shaped around the problem, but most work falls into four practical categories.</h2>
+      <h2 class="section-heading">Four practical categories</h2>
+      <p class="section-intro">Every project is shaped around the problem, but most work falls into four practical categories.</p>
 
       <div class="tag-strip">
         <div class="tag-strip-item">
@@ -177,7 +171,8 @@
   <section class="section section--dark">
     <div class="container reveal">
       <p class="eyebrow">How we work</p>
-      <h2 class="section-heading" style="color:var(--white);">Understand the real problem, design the right system, build quickly, then improve based on real use.</h2>
+      <h2 class="section-heading" style="color:var(--white);">Four steps, start to finish</h2>
+      <p class="section-intro">Understand the real problem, design the right system, build quickly, then improve based on real use.</p>
 
       <div class="timeline">
         <div class="timeline-track">
@@ -206,7 +201,8 @@
   <section class="section section--light">
     <div class="container reveal">
       <p class="eyebrow">Problems we solve</p>
-      <h2 class="section-heading">Most organisations don't need technology for its own sake. They need clearer systems and tools that fit how people actually work.</h2>
+      <h2 class="section-heading">Not technology for its own sake</h2>
+      <p class="section-intro">Most organisations need clearer systems and tools that fit how people actually work — not more software.</p>
 
       <div class="grid grid-2 grid-3-desktop reveal-stagger" style="margin-top:var(--space-5);">
         <div class="card card--compact"><h3>Too much manual admin</h3><p>Staff are copying, checking, chasing or re-entering the same information.</p></div>
@@ -219,42 +215,48 @@
     </div>
   </section>
 
-  <!-- ============ PRODUCT STUDIO ============ -->
+  <!-- ============ PRODUCT STUDIO (split rows — layout variety #2) ============ -->
   <section class="section section--mist">
     <div class="container reveal">
       <p class="eyebrow">Product studio</p>
-      <h2 class="section-heading">Where ideas become working products — focused first versions, tested with real users and improved around what actually works.</h2>
-      <p class="section-intro">Used across physical products, mobile apps, operational tools and automation systems — including commercial products, real-time performance apps and systems supporting thousands of users.</p>
+      <h2 class="section-heading">Where ideas become working products</h2>
+      <p class="section-intro">Focused first versions, tested with real users and improved around what actually works — used across physical products, mobile apps, operational tools and automation systems.</p>
 
-      <div class="scroll-row reveal-stagger" style="margin-top:var(--space-5);">
-        <div class="card">
+      <div class="split-list reveal-stagger">
+        <div class="split-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 12 7 12 9.5 5 14.5 19 17 12 22 12"/></svg></div>
-          <h3>Real-time apps &amp; data tools</h3>
-          <p>Mobile and web apps that capture, process and share live data — GPS, sensors, performance metrics and dashboards.</p>
+          <div><h3>Real-time apps &amp; data tools</h3><p>Mobile and web apps that capture, process and share live data — GPS, sensors, performance metrics and dashboards.</p></div>
         </div>
-        <div class="card">
+        <div class="split-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="19" y1="19" x2="15.2" y2="15.2"/></svg></div>
-          <h3>Automation &amp; research tools</h3>
-          <p>From web scraping and data extraction to spreadsheet automation — turning repetitive work into repeatable process.</p>
+          <div><h3>Automation &amp; research tools</h3><p>From web scraping and data extraction to spreadsheet automation — turning repetitive work into repeatable process.</p></div>
         </div>
-        <div class="card">
+        <div class="split-item">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l8 4-8 4-8-4 8-4z"/><path d="M4 13l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg></div>
-          <h3>Integrated products</h3>
-          <p>When a project involves hardware, sensors or physical products, we support the pathway through to the software that makes it work.</p>
+          <div><h3>Integrated products</h3><p>When a project involves hardware, sensors or physical products, we support the pathway through to the software that makes it work.</p></div>
         </div>
       </div>
-      <p class="scroll-hint">← swipe for more →</p>
     </div>
   </section>
 
-  <!-- ============ PROOF IN PRACTICE ============ -->
+  <!-- ============ PROOF IN PRACTICE (now with client logos) ============ -->
   <section class="section section--light">
     <div class="container reveal">
       <p class="eyebrow">Proof in practice</p>
-      <h2 class="section-heading">A few examples of where AstraVia has turned operational problems and product ideas into working systems.</h2>
+      <h2 class="section-heading">A few examples</h2>
+      <p class="section-intro">Where AstraVia has turned operational problems and product ideas into working systems.</p>
 
       <div class="case-grid">
+        <a href="case-studies.html#rowcoach" class="case-card">
+          <img src="logo-rowcoach.png" alt="RowCoach" class="case-logo">
+          <p class="eyebrow">Real-time performance app for rowing</p>
+          <h3>RowCoach</h3>
+          <p>Rowing performance data is often locked behind expensive specialist hardware or fragmented across separate tools. We built a mobile app combining GPS tracking, stroke-rate detection, heart-rate integration and live data sharing.</p>
+          <p class="case-impact">Real-time training insight through a simpler, lower-cost system.</p>
+          <span class="case-card-link">Read the full story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="18" y2="12"/><polyline points="12 6 18 12 12 18"/></svg></span>
+        </a>
         <a href="case-studies.html#wraparoundcare4u" class="case-card">
+          <img src="logo-wraparoundcare4u.png" alt="WrapAroundCare4u" class="case-logo" style="background:#fff;padding:6px;">
           <p class="eyebrow">Safeguarding &amp; medical information</p>
           <h3>WrapAroundCare4u</h3>
           <p>Critical information for nearly 3,000 children needed to be easier to manage, update and access across the organisation. We built a custom frontend and backend system, supported by easy-to-use spreadsheet workflows.</p>
@@ -262,6 +264,7 @@
           <span class="case-card-link">Read the full story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="18" y2="12"/><polyline points="12 6 18 12 12 18"/></svg></span>
         </a>
         <a href="case-studies.html#kompact9" class="case-card">
+          <img src="logo-kompact9.png" alt="Kompact9" class="case-logo">
           <p class="eyebrow">Sales &amp; operations automation</p>
           <h3>Kompact9</h3>
           <p>A small product business needed to expand retail outreach without spending days manually searching for stockists. We built a web-scraping and spreadsheet-integrated research tool to do it for them.</p>
@@ -272,30 +275,27 @@
     </div>
   </section>
 
-  <!-- ============ FOUNDER-LED ============ -->
+  <!-- ============ FOUNDER-LED (numbered, no cards — layout variety #3) ============ -->
   <section class="section section--dark">
     <div class="container reveal">
       <p class="eyebrow">Founder-led, specialist-supported</p>
-      <h2 class="section-heading" style="color:var(--white);">Clients work directly with the person understanding, shaping and delivering the solution — with trusted specialist support brought in when a project needs it.</h2>
+      <h2 class="section-heading" style="color:var(--white);">Direct access, professional delivery</h2>
+      <p class="section-intro">Clients work directly with the person understanding, shaping and delivering the solution — with trusted specialist support brought in when a project needs it.</p>
 
-      <div class="scroll-row reveal-stagger" style="margin-top:var(--space-5);">
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/></svg></div>
-          <h3>Direct senior input</h3>
-          <p>No layers of account management between the problem and the person shaping the solution.</p>
+      <div class="numbered-list">
+        <div class="numbered-item">
+          <span class="num">01</span>
+          <div><h3>Direct senior input</h3><p>No layers of account management between the problem and the person shaping the solution.</p></div>
         </div>
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><rect x="8" y="7" width="2" height="2"/><rect x="14" y="7" width="2" height="2"/><rect x="8" y="12" width="2" height="2"/><rect x="14" y="12" width="2" height="2"/></svg></div>
-          <h3>Professional company structure</h3>
-          <p>Delivery through AstraVia Ltd, with clear scope, invoicing and support.</p>
+        <div class="numbered-item">
+          <span class="num">02</span>
+          <div><h3>Professional structure</h3><p>Delivery through AstraVia Ltd, with clear scope, invoicing and support.</p></div>
         </div>
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5"/><path d="M16 3h5v5"/><path d="M21 16v5h-5"/><path d="M3 16v5h5"/></svg></div>
-          <h3>Scalable support</h3>
-          <p>Specialist design, development or implementation support added where the project requires it.</p>
+        <div class="numbered-item">
+          <span class="num">03</span>
+          <div><h3>Scalable support</h3><p>Specialist design, development or implementation support added where the project requires it.</p></div>
         </div>
       </div>
-      <p class="scroll-hint">← swipe for more →</p>
     </div>
   </section>
 
@@ -303,7 +303,8 @@
   <section class="section section--dark" style="padding-top:0;">
     <div class="container reveal">
       <p class="eyebrow">Who this is for</p>
-      <h2 class="section-heading" style="color:var(--white);">AstraVia is a good fit for organisations that are growing, changing, or working with processes that no longer fit.</h2>
+      <h2 class="section-heading" style="color:var(--white);">A good fit if you're...</h2>
+      <p class="section-intro">Growing, changing, or working with processes that no longer fit.</p>
       <div class="tag-cloud">
         <span class="tag-pill">Schools, clubs &amp; education</span>
         <span class="tag-pill">Activity &amp; childcare operators</span>
@@ -330,7 +331,8 @@
   <section class="section section--light">
     <div class="container reveal">
       <p class="eyebrow">Ways to work together</p>
-      <h2 class="section-heading">Projects can start small or scale into larger systems, depending on the problem and how quickly you want to move.</h2>
+      <h2 class="section-heading">Start small, or scale up</h2>
+      <p class="section-intro">Projects can start small or scale into larger systems, depending on the problem and how quickly you want to move.</p>
 
       <div class="grid grid-2 grid-4-desktop reveal-stagger" style="margin-top:var(--space-5);">
         <div class="card card--compact">
@@ -372,7 +374,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span>&copy; <span id="year"></span> AstraVia</span>
+    <span style="display:flex;align-items:center;gap:8px;"><img src="astravia-mark.png" alt="" style="height:20px;width:auto;">&copy; <span id="year"></span> AstraVia</span>
     <a href="mailto:info@astravia.tech">info@astravia.tech</a>
   </div>
 </footer>

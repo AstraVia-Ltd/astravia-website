@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Case Studies — AstraVia</title>
-<meta name="description" content="Real examples of AstraVia turning operational problems and product ideas into working systems, including WrapAroundCare4u and Kompact9.">
+<meta name="description" content="Real examples of AstraVia turning operational problems and product ideas into working systems, including RowCoach, WrapAroundCare4u and Kompact9.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   .story-grid { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
   .story-block h3 { font-size: var(--text-base); font-family: var(--font-mono); font-weight: 500; color: var(--blue); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.04em; font-size: var(--text-xs); }
   .story-block p { color: var(--slate); }
-  .story-impact { background: var(--mist); border-radius: var(--radius-md); padding: var(--space-3); }
+  .story-impact { background: var(--blue-tint); border-left: 3px solid var(--blue); border-radius: var(--radius-md); padding: var(--space-3); }
   .story-impact p { color: var(--navy); font-weight: 500; }
   @media (min-width: 860px) { .story-grid { grid-template-columns: repeat(3, 1fr); } }
 </style>
@@ -23,7 +23,7 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="wordmark">Astra<span>Via</span></a>
+    <a href="index.html" class="wordmark"><img src="astravia-mark.png" alt="AstraVia">Astra<span>Via</span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="case-studies.html" class="is-active">Case Studies</a>
@@ -52,8 +52,33 @@
     </div>
   </section>
 
-  <section class="story section--light" id="wraparoundcare4u">
+  <section class="story section--light" id="rowcoach">
     <div class="container reveal">
+      <img src="logo-rowcoach.png" alt="RowCoach" class="case-logo" style="width:64px;height:64px;">
+      <p class="eyebrow">Real-time performance app for rowing athletes and coaches</p>
+      <h2 class="section-heading">RowCoach</h2>
+      <div class="story-grid">
+        <div class="story-block">
+          <h3>Problem</h3>
+          <p>Rowing performance data is often locked behind expensive specialist hardware or fragmented across separate tools.</p>
+        </div>
+        <div class="story-block">
+          <h3>What we built</h3>
+          <p>A mobile app combining GPS speed and split tracking, accelerometer-based stroke-rate detection, heart-rate integration, cloud session storage, CSV export and live data sharing.</p>
+        </div>
+        <div class="story-block story-impact">
+          <h3>Impact</h3>
+          <p>Coaches and athletes get useful real-time training insight through a simpler, lower-cost system.</p>
+        </div>
+      </div>
+      <p class="section-intro" style="margin-top:var(--space-3);"><strong style="color:var(--navy);">Relevant capability:</strong> Mobile app development, sensor data, live data sharing, cloud infrastructure, user-focused interface design.</p>
+      <a href="https://apps.apple.com/gb/app/row-coach/id6730123539" class="btn btn-ghost" style="border-color:var(--border-light);color:var(--navy);margin-top:var(--space-3);">View on the App Store</a>
+    </div>
+  </section>
+
+  <section class="story section--mist" id="wraparoundcare4u">
+    <div class="container reveal">
+      <img src="logo-wraparoundcare4u.png" alt="WrapAroundCare4u" class="case-logo" style="background:#fff;padding:6px;width:64px;height:64px;">
       <p class="eyebrow">Safeguarding, SEND &amp; medical information system</p>
       <h2 class="section-heading">WrapAroundCare4u</h2>
       <div class="story-grid">
@@ -73,8 +98,9 @@
     </div>
   </section>
 
-  <section class="story section--mist" id="kompact9">
+  <section class="story section--light" id="kompact9">
     <div class="container reveal">
+      <img src="logo-kompact9.png" alt="Kompact9" class="case-logo" style="width:64px;height:64px;">
       <p class="eyebrow">Product business, operations &amp; sales automation</p>
       <h2 class="section-heading">Kompact9</h2>
       <div class="story-grid">
@@ -109,7 +135,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span>&copy; <span id="year"></span> AstraVia</span>
+    <span style="display:flex;align-items:center;gap:8px;"><img src="astravia-mark.png" alt="" style="height:20px;width:auto;">&copy; <span id="year"></span> AstraVia</span>
     <a href="mailto:info@astravia.tech">info@astravia.tech</a>
   </div>
 </footer>
