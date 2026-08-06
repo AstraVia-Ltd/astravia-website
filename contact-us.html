@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us — AstraVia</title>
+<meta name="description" content="Get in touch with AstraVia about a process, system or app idea that needs improving.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="wordmark">Astra<span>Via</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact-us.html" class="is-active">Contact us</a>
+    </nav>
+    <a href="mailto:info@astravia.tech" class="btn btn-primary nav-cta">Email us</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case studies</a>
+    <a href="contact-us.html">Contact us</a>
+    <a href="mailto:info@astravia.tech" class="btn btn-primary">Email us</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container reveal">
+      <p class="eyebrow">Contact us</p>
+      <h1>Let's talk through the problem</h1>
+      <p class="section-intro">Whether you want to reduce manual admin, improve an internal process, build a custom tool or explore a new app idea, the best starting point is a simple conversation.</p>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="contact-primary reveal">
+          <p class="eyebrow">Get in touch</p>
+          <p style="color:var(--slate); margin-bottom:0.75rem;">The fastest way to get in touch is by email:</p>
+          <a href="mailto:info@astravia.tech" class="contact-email">info@astravia.tech</a>
+        </div>
+
+        <div class="reveal">
+          <p class="eyebrow">Useful things to include</p>
+          <ul class="contact-checklist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12.5 10.5 15 16 9"/></svg> What process, system or idea you want help with</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12.5 10.5 15 16 9"/></svg> What currently takes too much time</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12.5 10.5 15 16 9"/></svg> Any tools, spreadsheets or systems you already use</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12.5 10.5 15 16 9"/></svg> Whether you need advice, a prototype or a finished system</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12.5 10.5 15 16 9"/></svg> Any deadline or budget range, if already known</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year"></span> AstraVia</span>
+    <a href="mailto:info@astravia.tech">info@astravia.tech</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

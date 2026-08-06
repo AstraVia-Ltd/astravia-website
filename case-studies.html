@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies — AstraVia</title>
+<meta name="description" content="Real examples of AstraVia turning operational problems and product ideas into working systems, including WrapAroundCare4u and Kompact9.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .story { padding: var(--space-6) 0; border-bottom: 1px solid var(--border-light); }
+  .story-grid { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
+  .story-block h3 { font-size: var(--text-base); font-family: var(--font-mono); font-weight: 500; color: var(--blue); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.04em; font-size: var(--text-xs); }
+  .story-block p { color: var(--slate); }
+  .story-impact { background: var(--mist); border-radius: var(--radius-md); padding: var(--space-3); }
+  .story-impact p { color: var(--navy); font-weight: 500; }
+  @media (min-width: 860px) { .story-grid { grid-template-columns: repeat(3, 1fr); } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="wordmark">Astra<span>Via</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="case-studies.html" class="is-active">Case Studies</a>
+      <a href="contact-us.html">Contact us</a>
+    </nav>
+    <a href="contact-us.html" class="btn btn-primary nav-cta">Book a call</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case studies</a>
+    <a href="contact-us.html">Contact us</a>
+    <a href="contact-us.html" class="btn btn-primary">Book a call</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container reveal">
+      <p class="eyebrow">Case studies</p>
+      <h1>Proof in practice</h1>
+      <p class="section-intro">A few examples of where AstraVia has turned operational problems and product ideas into working systems.</p>
+    </div>
+  </section>
+
+  <section class="story section--light" id="wraparoundcare4u">
+    <div class="container reveal">
+      <p class="eyebrow">Safeguarding, SEND &amp; medical information system</p>
+      <h2 class="section-heading">WrapAroundCare4u</h2>
+      <div class="story-grid">
+        <div class="story-block">
+          <h3>Problem</h3>
+          <p>Critical information for nearly 3,000 children needed to be easier to manage, update and access across the organisation.</p>
+        </div>
+        <div class="story-block">
+          <h3>What we built</h3>
+          <p>A custom frontend and backend system supported by easy-to-use spreadsheet workflows, giving staff a clearer way to manage SEND, safeguarding and medical information.</p>
+        </div>
+        <div class="story-block story-impact">
+          <h3>Impact</h3>
+          <p>Reduced manual admin, improved visibility, and made a previously time-heavy process much easier to run.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story section--mist" id="kompact9">
+    <div class="container reveal">
+      <p class="eyebrow">Product business, operations &amp; sales automation</p>
+      <h2 class="section-heading">Kompact9</h2>
+      <div class="story-grid">
+        <div class="story-block">
+          <h3>Problem</h3>
+          <p>A small product business needed to expand retail outreach without spending days manually searching for suitable stockists.</p>
+        </div>
+        <div class="story-block">
+          <h3>What we built</h3>
+          <p>A web-scraping and spreadsheet-integrated research tool that searched target areas, identified relevant pet shops, and returned available contact details and locations.</p>
+        </div>
+        <div class="story-block story-impact">
+          <h3>Impact</h3>
+          <p>Turned manual research into a repeatable sales process and saved hundreds of hours of work.</p>
+        </div>
+      </div>
+      <p class="section-intro" style="margin-top:var(--space-3);"><strong style="color:var(--navy);">Wider experience:</strong> Kompact9 also demonstrates end-to-end product experience — concept, prototyping, manufacturing, logistics, retail, sales and market validation.</p>
+    </div>
+  </section>
+
+  <section class="section section--dark cta-close">
+    <div class="container reveal">
+      <h2>Have a process, system or app idea that needs improving?</h2>
+      <p class="section-intro">Let's talk through what's currently taking too much time, where the opportunity is, and what a better system could look like.</p>
+      <div class="hero-actions">
+        <a href="contact-us.html" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>&copy; <span id="year"></span> AstraVia</span>
+    <a href="mailto:info@astravia.tech">info@astravia.tech</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
