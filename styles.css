@@ -503,15 +503,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    Who this is for — tag cloud
    ========================================================================== */
 
-.tag-cloud { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; margin-top: var(--space-4); }
+.tag-cloud { display: grid; grid-template-columns: 1fr; gap: 0.6rem; margin-top: var(--space-4); }
 .tag-pill {
   border: 1px solid var(--navy-line);
-  border-radius: 999px;
-  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 1rem;
   font-size: var(--text-sm);
   color: #dde1ef;
+  line-height: 1.4;
 }
-@media (min-width: 720px) { .tag-cloud { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 600px) { .tag-cloud { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .tag-cloud { grid-template-columns: repeat(3, 1fr); } }
 
 /* ==========================================================================
    Closing CTA + footer
