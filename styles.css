@@ -716,7 +716,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: 0;
   color: var(--blue-light);
 }
-.stat-card > p {
+.stat-card > p:not([class]) {
   color: #dfe3ee;
   font-size: var(--stat-desc);
   line-height: 1.65;
@@ -726,7 +726,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: #868fa6;
   margin-top: var(--space-3);
 }
-.stat-card > p.stat-source { font-size: var(--text-sm); color: #868fa6; line-height: 1.5; }
+.stat-card .stat-source { line-height: 1.5; }
 
 .pull-quote {
   border-left: 3px solid var(--blue);
