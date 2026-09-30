@@ -290,6 +290,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: -0.01em;
   max-width: 15ch;
 }
+@media (min-width: 860px) {
+  .hero-copy { max-width: 60rem; }
+  .hero-copy h1 { max-width: none; }
+  .hero-copy h1 .accent-line { white-space: nowrap; }
+}
 .hero-copy .section-intro { color: #c3cae2; font-size: var(--text-lg); max-width: 34rem; }
 .hero-actions { display: flex; gap: var(--space-2); margin-top: var(--space-4); flex-wrap: wrap; }
 
@@ -683,26 +688,39 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .stat-label {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--blue-light);
-  margin-bottom: var(--space-2);
+  padding-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid var(--navy-line);
 }
 .stat-figure {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 4.5rem;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
   color: var(--white);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
 }
-.stat-figure .unit { font-size: 1.25rem; font-weight: 500; }
-.stat-card p { color: #b3bad2; font-size: var(--text-sm); line-height: 1.6; }
+.stat-figure .unit {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--blue-light);
+}
+.stat-card > p { color: #c3cae2; font-size: var(--text-base); line-height: 1.6; }
 .stat-source {
+  font-family: var(--font-mono);
   font-size: var(--text-xs);
   color: #7c85a3;
-  margin-top: var(--space-2);
+  margin-top: var(--space-3);
 }
+.stat-card > p.stat-source { font-size: var(--text-xs); color: #7c85a3; }
 
 .pull-quote {
   border-left: 3px solid var(--blue);
@@ -714,24 +732,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .pull-quote p { color: #dde1ef; font-size: var(--text-base); line-height: 1.6; }
 
 /* ---------- How we work: steps beside two reference panels ---------- */
-.work-layout { display: grid; gap: var(--space-5); margin-top: var(--space-5); }
-@media (min-width: 1000px) { .work-layout { grid-template-columns: 1.6fr 1fr; align-items: start; } }
+.work-layout { display: block; margin-top: var(--space-5); }
 
 .work-steps { display: grid; gap: var(--space-4); }
 @media (min-width: 620px) { .work-steps { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .work-steps { grid-template-columns: repeat(4, 1fr); } }
 .work-step { display: flex; gap: var(--space-3); align-items: flex-start; }
+@media (min-width: 1000px) { .work-step { flex-direction: column; gap: var(--space-2); } }
 .work-step .timeline-num { margin-bottom: 0; }
 .work-step h3 { font-size: var(--text-base); margin-bottom: 0.35rem; }
 .work-step p { font-size: var(--text-sm); line-height: 1.6; }
 
-.work-note { margin-top: var(--space-4); font-size: var(--text-sm); line-height: 1.6; max-width: 40rem; }
+.work-note { margin-top: var(--space-5); font-size: var(--text-sm); line-height: 1.6; max-width: 46rem; }
 
-.panel-stack { display: grid; gap: var(--space-3); }
+.panel-stack { display: grid; gap: var(--space-3); margin-top: var(--space-6); }
+@media (min-width: 820px) { .panel-stack { grid-template-columns: repeat(2, 1fr); align-items: start; } }
 .panel {
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
-  padding: var(--space-3) var(--space-4);
-  background: var(--white);
+  padding: var(--space-4);
+  background: var(--mist);
 }
 .panel h3 { font-size: var(--text-base); margin-bottom: var(--space-2); }
 .panel ul { display: flex; flex-direction: column; gap: 0.7rem; }
@@ -746,14 +766,38 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (min-width: 1100px) { .practice-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .practice-card {
+  background: var(--white);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-4);
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 6px rgba(16, 20, 33, 0.04);
   transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
 .practice-card:hover { transform: translateY(-4px); border-color: var(--blue); box-shadow: 0 20px 40px -20px rgba(16, 20, 33, 0.25); }
+
+/* Fixed-height logo well and eyebrow so every company name starts on the same line */
+.practice-logo {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+.practice-logo img {
+  max-height: 68px;
+  max-width: 160px;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+.practice-card > .eyebrow {
+  min-height: 2.6em;
+  align-items: flex-start;
+  margin-bottom: var(--space-2);
+  line-height: 1.3;
+}
+.practice-card > .eyebrow::before { margin-top: 0.55em; }
 .practice-card h3 { font-size: var(--text-xl); margin-bottom: 0.2rem; }
 .practice-descriptor { font-size: var(--text-sm); color: var(--slate); margin-bottom: var(--space-3); }
 .practice-block { margin-bottom: var(--space-3); }
