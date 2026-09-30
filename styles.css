@@ -688,32 +688,37 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   flex-direction: column;
 }
 .stat-card .stat-source { margin-top: auto; padding-top: var(--space-3); }
+/* Stat sizing is defined as exact ratios of the description text:
+   label = 1.15x, number = 2x, unit = half the number. */
+.stat-card { --stat-desc: var(--text-base); }
+
 .stat-label {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: #8f9dc4;
+  font-size: calc(var(--stat-desc) * 1.15);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue-light);
   margin-bottom: var(--space-2);
 }
 .stat-figure {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 4rem;
-  line-height: 1;
-  letter-spacing: -0.03em;
+  font-size: calc(var(--stat-desc) * 2);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   color: var(--white);
   margin-bottom: var(--space-3);
 }
 .stat-figure .unit {
-  font-size: 0.34em;
+  font-size: 0.5em;
   font-weight: 600;
   letter-spacing: 0;
-  color: #9aa8d4;
+  color: var(--blue-light);
 }
 .stat-card > p {
   color: #dfe3ee;
-  font-size: var(--text-base);
+  font-size: var(--stat-desc);
   line-height: 1.65;
 }
 .stat-source {
