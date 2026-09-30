@@ -687,9 +687,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display: flex;
   flex-direction: column;
 }
-.stat-card .stat-source { margin-top: auto; padding-top: var(--space-3); }
 /* Stat sizing is defined as exact ratios of the description text:
-   label = 1.15x, number = 2x, unit = half the number. */
+   label = 1.15x, number = 3x, unit = half the number. */
 .stat-card { --stat-desc: var(--text-base); }
 
 .stat-label {
@@ -698,13 +697,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  line-height: 1.35;
   color: var(--blue-light);
   margin-bottom: var(--space-2);
+}
+/* Side by side, reserve two lines for the title so the numbers, and therefore
+   the descriptions beneath them, all start level across the row. */
+@media (min-width: 820px) {
+  .stat-label { min-height: 2.7em; }
 }
 .stat-figure {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: calc(var(--stat-desc) * 2);
+  font-size: calc(var(--stat-desc) * 3);
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--white);
@@ -721,12 +726,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-size: var(--stat-desc);
   line-height: 1.65;
 }
+/* Pinned to the bottom of the card so all three source lines sit level,
+   whatever length the description above them runs to. */
 .stat-source {
   font-size: var(--text-sm);
   color: #868fa6;
-  margin-top: var(--space-3);
+  line-height: 1.5;
+  margin-top: auto;
+  padding-top: var(--space-3);
 }
-.stat-card .stat-source { line-height: 1.5; }
 
 .pull-quote {
   border-left: 3px solid var(--blue);
