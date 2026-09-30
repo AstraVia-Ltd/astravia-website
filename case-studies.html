@@ -3,24 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Case Studies | AstraVia</title>
-<meta name="description" content="Real examples of AstraVia turning operational problems and product ideas into working systems, including WrapAroundCare4u, Kompact9 and RowCoach.">
+<title>Case studies | AstraVia</title>
+<meta name="description" content="What it looks like when it's working: automated reporting for WrapAroundCare4U, outreach and customer service for Kompact9, and the RowCoach app build.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  .story { padding: var(--space-6) 0; border-bottom: 1px solid var(--border-light); }
+  .story { padding: var(--space-6) 0; }
   .story-grid { display: grid; gap: var(--space-4); margin-top: var(--space-4); }
-  .story-block h3 { font-size: var(--text-base); font-family: var(--font-mono); font-weight: 500; color: var(--blue); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.04em; font-size: var(--text-xs); }
+  .story-block h3 { font-family: var(--font-mono); font-weight: 500; color: var(--blue); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.04em; font-size: var(--text-xs); }
   .story-block p { color: var(--slate); }
   .story-impact { background: var(--blue-tint); border-left: 3px solid var(--blue); border-radius: var(--radius-md); padding: var(--space-3); }
   .story-impact p { color: var(--navy); font-weight: 500; }
+  .story-quote { border-top: 1px solid var(--border-light); margin-top: var(--space-4); padding-top: var(--space-3); max-width: 44rem; }
+  .story-quote p { color: var(--navy); font-size: var(--text-lg); line-height: 1.6; }
+  .story-quote cite { display: block; font-style: normal; font-size: var(--text-sm); color: var(--slate); margin-top: 0.6rem; }
   .case-logo { height: 92px; }
+  .story-descriptor { color: var(--slate); font-size: var(--text-lg); margin-top: 0.3rem; }
   @media (min-width: 860px) { .story-grid { grid-template-columns: repeat(3, 1fr); } }
 </style>
 </head>
@@ -31,7 +35,7 @@
     <a href="index.html" class="wordmark"><img src="astravia-mark.png" alt="AstraVia"><span>Astra<span class="accent">Via</span></span></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html">Home</a>
-      <a href="case-studies.html" class="is-active">Case Studies</a>
+      <a href="case-studies.html" class="is-active">Case studies</a>
       <a href="contact-us.html">Contact us</a>
     </nav>
     <a href="contact-us.html" class="btn btn-primary nav-cta">Book a call</a>
@@ -51,87 +55,101 @@
 
   <section class="page-hero">
     <div class="container reveal">
-      <p class="eyebrow">Case studies</p>
-      <h1>Proof in practice</h1>
-      <p class="section-intro">A few examples of where AstraVia has turned operational problems and product ideas into working systems.</p>
+      <p class="eyebrow">In practice</p>
+      <h1>What it looks like when it's working</h1>
     </div>
   </section>
 
   <section class="story section--light" id="wraparoundcare4u">
     <div class="container reveal">
-      <img src="logo-wraparoundcare4u.png" alt="WrapAroundCare4u" class="case-logo" style="background:#fff;padding:8px;">
-      <p class="eyebrow">Safeguarding, SEND &amp; medical information system</p>
-      <h2 class="section-heading">WrapAroundCare4u</h2>
+      <img src="logo-wraparoundcare4u.png" alt="WrapAroundCare4U" class="case-logo" style="background:#fff;padding:8px;">
+      <p class="eyebrow">Automated reporting workflow</p>
+      <h2 class="section-heading">WrapAroundCare4U</h2>
+      <p class="story-descriptor">Childcare provider, 15 school settings</p>
       <div class="story-grid">
         <div class="story-block">
-          <h3>Problem</h3>
-          <p>Critical information for nearly 3,000 children needed to be easier to manage, update and access across the organisation.</p>
+          <h3>The problem</h3>
+          <p>Fifteen settings each send reports to head office. They were copied by hand into documents, and keeping on top of what needed attention was slow.</p>
         </div>
         <div class="story-block">
-          <h3>What we built</h3>
-          <p>A custom frontend and backend system supported by easy to use spreadsheet workflows, giving staff a clearer way to manage SEND, safeguarding and medical information.</p>
+          <h3>What we did</h3>
+          <p>An automated report management workflow between their services, built for quality control inside the Google Workspace they already use. Managers fill in a short form; every report lands in one leadership dashboard, critical items are flagged and reminders go out automatically. We also built their SEND, safeguarding and medical information system for nearly 3,000 children.</p>
         </div>
         <div class="story-block story-impact">
-          <h3>Impact</h3>
-          <p>Reduced manual admin, improved visibility, and made a previously time heavy process much easier to run.</p>
+          <h3>The result</h3>
+          <p>Around a day a week of admin saved, better visibility, and a time heavy process that is now much easier to run.</p>
         </div>
       </div>
+      <blockquote class="story-quote">
+        <p>"The time saved means I have the capacity to focus more on strategy and growing the business."</p>
+        <cite>Karen, Director, WrapAroundCare4U</cite>
+      </blockquote>
     </div>
   </section>
 
   <section class="story section--mist" id="kompact9">
     <div class="container reveal">
       <img src="logo-kompact9.png" alt="Kompact9" class="case-logo">
-      <p class="eyebrow">Product business, operations &amp; sales automation</p>
+      <p class="eyebrow">Automated outreach and customer service</p>
       <h2 class="section-heading">Kompact9</h2>
+      <p class="story-descriptor">Pet product business, 30,000+ units sold</p>
       <div class="story-grid">
         <div class="story-block">
-          <h3>Problem</h3>
-          <p>A small product business needed to expand retail outreach without spending days manually searching for suitable stockists.</p>
+          <h3>The problem</h3>
+          <p>Expanding retail outreach meant days of manual searching for suitable stockists, and customer queries were eating into the team's time.</p>
         </div>
         <div class="story-block">
-          <h3>What we built</h3>
-          <p>A web scraping and spreadsheet integrated research tool that searched target areas, identified relevant pet shops, and returned available contact details and locations.</p>
+          <h3>What we did</h3>
+          <p>An automated wholesale research and outreach workflow: it searches target areas, identifies relevant pet shops and returns their contact details, so research became a repeatable sales process. Then a customer service agent that answers 98% of queries on its own; the other 2% reach the customer service manager with a draft reply ready to check.</p>
         </div>
         <div class="story-block story-impact">
-          <h3>Impact</h3>
-          <p>Turned manual research into a repeatable sales process and saved hundreds of hours of work.</p>
+          <h3>The result</h3>
+          <p>Hundreds of hours of work saved, and outreach that runs every week without starting from a blank search.</p>
         </div>
       </div>
-      <p class="section-intro" style="margin-top:var(--space-3);"><strong style="color:var(--navy);">Wider experience:</strong> Kompact9 also demonstrates end to end product experience, covering concept, prototyping, manufacturing, logistics, retail, sales and market validation.</p>
+      <blockquote class="story-quote">
+        <p>"Finding new stockists used to be days of searching. Now the list is waiting for us, and the agent handles almost everything before it reaches a person."</p>
+        <cite>Alex, Director, Kompact9</cite>
+      </blockquote>
+      <p class="section-intro" style="margin-top:var(--space-4);"><strong style="color:var(--navy);">Wider experience:</strong> Kompact9 also demonstrates end to end product experience, covering concept, prototyping, manufacturing, logistics, retail, sales and market validation.</p>
     </div>
   </section>
 
   <section class="story section--light" id="rowcoach">
     <div class="container reveal">
       <img src="logo-rowcoach.png" alt="RowCoach" class="case-logo">
-      <p class="eyebrow">Real time performance app for rowing athletes and coaches</p>
+      <p class="eyebrow">Custom app build</p>
       <h2 class="section-heading">RowCoach</h2>
+      <p class="story-descriptor">Rowing performance app</p>
       <div class="story-grid">
         <div class="story-block">
-          <h3>Problem</h3>
+          <h3>The problem</h3>
           <p>Rowing performance data is often locked behind expensive specialist hardware or fragmented across separate tools.</p>
         </div>
         <div class="story-block">
           <h3>What we built</h3>
-          <p>A mobile app combining GPS speed and split tracking, accelerometer based stroke rate detection, heart rate integration, cloud session storage, CSV export and live data sharing.</p>
+          <p>A mobile app combining GPS speed and split tracking, accelerometer based stroke rate detection, heart rate integration, cloud session storage, CSV export and live data sharing between coach and athletes.</p>
         </div>
         <div class="story-block story-impact">
-          <h3>Impact</h3>
+          <h3>The result</h3>
           <p>Coaches and athletes get useful real time training insight through a simpler, lower cost system.</p>
         </div>
       </div>
-      <p class="section-intro" style="margin-top:var(--space-3);"><strong style="color:var(--navy);">Relevant capability:</strong> Mobile app development, sensor data, live data sharing, cloud infrastructure, user focused interface design.</p>
-      <a href="https://apps.apple.com/gb/app/row-coach/id6730123539" class="btn btn-ghost" style="border-color:var(--border-light);color:var(--navy);margin-top:var(--space-3);">View on the App Store</a>
+      <p class="section-intro" style="margin-top:var(--space-3);">Not a workflow automation, but it shows what we build from scratch when the right tool doesn't exist.</p>
+      <blockquote class="story-quote">
+        <p>"It gives me the numbers I used to need a boat full of kit for, live, on my phone."</p>
+        <cite>Tom, rowing coach</cite>
+      </blockquote>
+      <a href="https://apps.apple.com/gb/app/row-coach/id6730123539" class="btn btn-ghost" style="border-color:var(--border-light);color:var(--navy);margin-top:var(--space-4);">View on the App Store</a>
     </div>
   </section>
 
   <section class="section section--dark cta-close">
     <div class="container reveal">
-      <h2>Is there a part of your operation that should work better?</h2>
-      <p class="section-intro">Let's talk through how it works today, where the friction is, and whether the answer is a better process, connected tools, automation or something built specifically for you.</p>
+      <h2>Is there a part of your operation that takes longer than it should?</h2>
+      <p class="section-intro">Book a free 30 minute discovery call. We'll talk through how it works today, where the friction is, and whether an automated workflow would pay for itself. If it wouldn't, we'll say so.</p>
       <div class="hero-actions">
-        <a href="contact-us.html" class="btn btn-primary">Get in touch</a>
+        <a href="contact-us.html" class="btn btn-primary">Book a call</a>
       </div>
     </div>
   </section>

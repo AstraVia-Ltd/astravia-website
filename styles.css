@@ -662,3 +662,167 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* Case study logo badge */
 .case-logo { height: 128px; width: auto; max-width: 280px; object-fit: contain; border-radius: var(--radius-sm); margin-bottom: var(--space-3); display: block; }
+
+/* ==========================================================================
+   Brochure-aligned sections (Sept 2026 restructure)
+   ========================================================================== */
+
+/* Hero: two line headline, second line in accent */
+.hero-copy h1 .accent-line { color: var(--blue-light); display: block; }
+
+/* ---------- The problem: stat cards + pull quote ---------- */
+.stat-grid { display: grid; gap: var(--space-3); margin-top: var(--space-5); }
+@media (min-width: 820px) { .stat-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.stat-card {
+  background: var(--navy-soft);
+  border: 1px solid var(--navy-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  margin-bottom: var(--space-2);
+}
+.stat-figure {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: var(--space-2);
+}
+.stat-figure .unit { font-size: 1.25rem; font-weight: 500; }
+.stat-card p { color: #b3bad2; font-size: var(--text-sm); line-height: 1.6; }
+.stat-source {
+  font-size: var(--text-xs);
+  color: #7c85a3;
+  margin-top: var(--space-2);
+}
+
+.pull-quote {
+  border-left: 3px solid var(--blue);
+  background: rgba(123, 149, 207, 0.08);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-4);
+}
+.pull-quote p { color: #dde1ef; font-size: var(--text-base); line-height: 1.6; }
+
+/* ---------- How we work: steps beside two reference panels ---------- */
+.work-layout { display: grid; gap: var(--space-5); margin-top: var(--space-5); }
+@media (min-width: 1000px) { .work-layout { grid-template-columns: 1.6fr 1fr; align-items: start; } }
+
+.work-steps { display: grid; gap: var(--space-4); }
+@media (min-width: 620px) { .work-steps { grid-template-columns: repeat(2, 1fr); } }
+.work-step { display: flex; gap: var(--space-3); align-items: flex-start; }
+.work-step .timeline-num { margin-bottom: 0; }
+.work-step h3 { font-size: var(--text-base); margin-bottom: 0.35rem; }
+.work-step p { font-size: var(--text-sm); line-height: 1.6; }
+
+.work-note { margin-top: var(--space-4); font-size: var(--text-sm); line-height: 1.6; max-width: 40rem; }
+
+.panel-stack { display: grid; gap: var(--space-3); }
+.panel {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  background: var(--white);
+}
+.panel h3 { font-size: var(--text-base); margin-bottom: var(--space-2); }
+.panel ul { display: flex; flex-direction: column; gap: 0.7rem; }
+.panel li { font-size: var(--text-sm); line-height: 1.55; color: var(--slate); display: flex; gap: 0.6rem; }
+.panel li::before { content: '\2192'; color: var(--blue); flex-shrink: 0; }
+.panel li strong { color: var(--navy); font-weight: 600; }
+.panel--dots li::before { content: '\2022'; }
+
+/* ---------- In practice: full case cards with quotes ---------- */
+.practice-grid { display: grid; gap: var(--space-3); margin-top: var(--space-5); }
+@media (min-width: 780px) { .practice-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .practice-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.practice-card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.practice-card:hover { transform: translateY(-4px); border-color: var(--blue); box-shadow: 0 20px 40px -20px rgba(16, 20, 33, 0.25); }
+.practice-card h3 { font-size: var(--text-xl); margin-bottom: 0.2rem; }
+.practice-descriptor { font-size: var(--text-sm); color: var(--slate); margin-bottom: var(--space-3); }
+.practice-block { margin-bottom: var(--space-3); }
+.practice-block h4 {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.practice-block p { font-size: var(--text-sm); color: var(--slate); line-height: 1.6; }
+.practice-block--result p { color: var(--navy); font-weight: 500; }
+.practice-caveat { font-size: var(--text-sm); color: #98a0b5; line-height: 1.6; margin-bottom: var(--space-3); }
+.practice-quote {
+  border-top: 1px solid var(--border-light);
+  padding-top: var(--space-3);
+  margin-top: auto;
+}
+.practice-quote p { font-size: var(--text-sm); color: var(--navy); line-height: 1.6; }
+.practice-quote cite { display: block; font-style: normal; font-size: var(--text-xs); color: var(--slate); margin-top: 0.5rem; }
+.practice-card .case-card-link { margin-top: var(--space-3); }
+
+/* ---------- Working with us: four step ladder ---------- */
+.ladder { display: grid; gap: var(--space-4); margin-top: var(--space-5); position: relative; }
+@media (min-width: 900px) { .ladder { grid-template-columns: repeat(4, 1fr); } }
+.ladder-step { position: relative; padding-top: var(--space-3); }
+.ladder-step::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.ladder-step::after {
+  content: '';
+  position: absolute;
+  top: 6px; left: 14px; right: 0;
+  height: 1px;
+  background: var(--border-light);
+}
+.ladder-step:last-child::after { display: none; }
+@media (max-width: 899px) { .ladder-step::after { display: none; } }
+.ladder-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 0.4rem;
+}
+.ladder-label .muted { color: var(--slate); }
+.ladder-step h3 { font-size: var(--text-lg); margin-bottom: 0.4rem; }
+.ladder-step p { font-size: var(--text-sm); color: var(--slate); line-height: 1.6; }
+
+/* ---------- Who it's for: fit signals ---------- */
+.fit-pills { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: var(--space-4); }
+.fit-pill {
+  border: 1px solid var(--navy-line);
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-size: var(--text-sm);
+  color: #dde1ef;
+}
+.sector-line { font-size: var(--text-sm); color: #98a0b5; margin-top: var(--space-3); line-height: 1.6; }
+
+/* ---------- Contact details block ---------- */
+.contact-detail { margin-top: var(--space-3); }
+.contact-detail span { display: block; font-size: var(--text-sm); color: var(--slate); }
+.contact-detail a { color: var(--blue); font-weight: 500; }
